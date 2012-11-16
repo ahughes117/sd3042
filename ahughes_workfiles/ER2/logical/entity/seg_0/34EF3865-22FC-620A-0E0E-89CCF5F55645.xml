@@ -78,6 +78,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="Quantity" id="50589686-3C62-F4C9-D8CC-0138608BA8F6">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-16 18:46:57 UTC</createdTime>
+<generatorID>87CC9B7B-0C86-F643-C511-EAA753BC462A</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers>
 <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="59FF1AFB-04C1-6214-6519-73EA60BA7EFF" name="OrderProduct_PK">
