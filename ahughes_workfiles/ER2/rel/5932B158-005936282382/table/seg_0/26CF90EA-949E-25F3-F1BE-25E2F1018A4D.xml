@@ -66,6 +66,16 @@
 <colAssociation fkAssociation="07AB732A-DB5B-82A2-7AC8-9AD55B634EA2" referredColumn="12E97EAC-C2D8-11DB-22FD-6F3074CEF15C"/>
 </associations>
 </Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Quantity" id="87CC9B7B-0C86-F643-C511-EAA753BC462A">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-16 18:01:37 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes>
 <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C7128DF9-EE81-A923-EE63-D311D568AE74" name="OrderProduct_PK">

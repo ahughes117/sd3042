@@ -25,7 +25,6 @@
    <object objectType="FKIndexAssociation" objectID="DF2AAAD4-473B-7711-C3C6-E7B7A07F2D79" name="Employee_Shop_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="7E5BCA35-CF05-F531-1E41-9EE046F1CD8A" name="Inventory_Stock_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="BD4F85C8-A9F6-639C-51AB-975A5E7433DA" name="Inventory_Treatment_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="C4EA7A31-41EC-6CDD-2679-A754252A2180" name="NH_TREATMENT_NH_SPECIALTY_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="07AB732A-DB5B-82A2-7AC8-9AD55B634EA2" name="OrderProduct_Product_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="E02A74CD-0D3D-025C-721D-B8B00D3BC369" name="Order_Shop_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="50EE8888-536B-A8AE-1A3F-D973A3C3F665" name="ProdSup_Product_FK" seqName="seg_0"/>

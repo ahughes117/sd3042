@@ -70,19 +70,6 @@
 <logicalDatatype>LOGDT026</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="SpecialtyID" id="1AADEA7A-B210-BBFE-384A-97DBEBA2AE1F">
-<createdBy>Alex Hughes</createdBy>
-<createdTime>2012-11-15 13:05:52 UTC</createdTime>
-<ownerDesignName>ER2</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>284302A1-C8DB-4FDB-A362-A580783C6741</delegate>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C4EA7A31-41EC-6CDD-2679-A754252A2180" referredColumn="284302A1-C8DB-4FDB-A362-A580783C6741"/>
-</associations>
-</Column>
 </columns>
 <indexes>
 <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="B8CEAA3A-A36C-E255-AD54-D5B2B7EB5F07" name="Treatment_PK">
@@ -100,9 +87,6 @@
 <createdTime>2012-11-15 20:24:52 UTC</createdTime>
 <ownerDesignName>ER2</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<indexColumnUsage>
-<colUsage columnID="1AADEA7A-B210-BBFE-384A-97DBEBA2AE1F"/>
-</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>
