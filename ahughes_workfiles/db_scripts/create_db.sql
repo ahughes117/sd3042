@@ -163,8 +163,9 @@ ALTER TABLE NH_ROOM
 
 CREATE TABLE NH_SHOP 
     ( 
-     ShopID INTEGER  NOT NULL , 
+     ShopID INTEGER  NOT NULL ,
      Name VARCHAR2 (20) , 
+	 Adress VARCHAR2 (20),
      ZipCode VARCHAR2 (10) , 
      ManagerID INTEGER  NOT NULL 
     ) 

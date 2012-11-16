@@ -2,17 +2,19 @@
 
 ***Normal Tables***
 
+***Group1 Tables***
 PRODUCT
-STOCK
 SUPPLIER
+TREATMENT
+CUSTOMER
+
+STOCK
 ORDER
 SHOP
 INVENTORY
 EMPLOYEE
 SPECIALTY
 ROOM
-TREATMENT
-CUSTOMER
 BOOKING
 
 ***Linker Tables***
@@ -22,34 +24,93 @@ SUPSHOP
 EMPSPEC
 
 *** All the tables have the prefix NH_ in order to make database server management easier. 
-*** At first all the normal tables are filled and after that the linker tables. The script is carefully 
-*** created not to create any referential integrity errors, so, don't change the order of the insert
-*** statements
+
+*** GROUP 1 Tables: The tables that are totally constraint independent, meaning that they can be inserted in any order because they havent got any outgoing foreign key constraints to other tables.
+
+*** GROUP 2 Tables: The tables that contain foreign keys which depend on tables of GROUP 1 only, meaning that they can be inserted in any order after the GROUP 1 tables have been inserted.
 */
 
+/* GROUP 1 Tables */
+
 /* ProductID INT, Desc VARCHAR, Price NUMBER (DECIMAL) */
-INSERT INTO NH_PRODUCT VALUES
-(1, 'aDescription', 15);
+INSERT INTO NH_PRODUCT VALUES 
+(1, 'ahughes co', 15);
+
+INSERT INTO NH_PRODUCT VALUES (2, 'Amazon Hair', 13.2);
+INSERT INTO NH_PRODUCT VALUES (3, 'Latex Gloves', 2.7);
+INSERT INTO NH_PRODUCT VALUES (4, 'Premium Lotion', 22.75);
+INSERT INTO NH_PRODUCT VALUES (5, 'Ultra Premium Lambda Olive Oil', 49.99);
+INSERT INTO NH_PRODUCT VALUES (6, 'Syringe', 3.7);
+INSERT INTO NH_PRODUCT VALUES (7, 'My Lucky One', 11.7);
+INSERT INTO NH_PRODUCT VALUES (8, 'Massage Underwear', 0.75);
+INSERT INTO NH_PRODUCT VALUES (9, 'Massage Slippers', 1.99);
+INSERT INTO NH_PRODUCT VALUES (10, 'Hair Protector', 0.5);
+INSERT INTO NH_PRODUCT VALUES (11, 'Natural Hair Conditioner', 9.99);
+INSERT INTO NH_PRODUCT VALUES (12, 'Natural Hair Shampoo', 4.99);
+INSERT INTO NH_PRODUCT VALUES (13, 'Relaxing Herbs', 3.99);
+INSERT INTO NH_PRODUCT VALUES (14, 'Natural Painkillers', 6.78);
+INSERT INTO NH_PRODUCT VALUES (15, 'Valerian Relaxing Pills', 3.98);
+
+
+/* SupplierID INT, Company VARCHAR, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
+INSERT INTO NH_SUPPLIER VALUES
+(1, 'HeadCare', 'Jack', 'Lee', '07908878547'); 
+
+INSERT INTO NH_SUPPLIER VALUES (2, 'HandLove', 'Red', 'Clif', '07505512336');
+INSERT INTO NH_SUPPLIER VALUES (3, 'FootLook', 'Kelly', 'Kent', '020874121458');
+INSERT INTO NH_SUPPLIER VALUES (4, 'BodyCare', 'Jeff', 'Kent', '07814777874');
+INSERT INTO NH_SUPPLIER VALUES (5, 'LookGood', 'Jimmy', 'Jay', '02085477777');  
+INSERT INTO NH_SUPPLIER VALUES (6, 'FirstWax', 'Ian', 'Beat', '079022121456'); 
+INSERT INTO NH_SUPPLIER VALUES (7, 'Cleaning', 'Ken', 'Naz', '020836987451'); 
+INSERT INTO NH_SUPPLIER VALUES (8, 'Marks and Spencer', 'Melinda', 'Belius', '0759874521');
+INSERT INTO NH_SUPPLIER VALUES (9, 'Dont judge our name', 'George', 'Jack-the-Elfs', '07569874521');
+INSERT INTO NH_SUPPLIER VALUES (10, 'Lousy Cleaning', 'George', 'Lazyman', '0756594521');
+INSERT INTO NH_SUPPLIER VALUES (11, 'Croco-Skin', 'Sting', 'Tooth', '07569874521');
+
+
+/* TreatmentID INT, Desc VARCHAR, Price DECIMAL */
+INSERT INTO NH_TREATMENT VALUES
+(1, 'Head Care', 15);
+
+INSERT INTO NH_TREATMENT VALUES (2, 'Foot Massage', 8.88);
+INSERT INTO NH_TREATMENT VALUES (3, 'Full Body Massage', 30);
+INSERT INTO NH_TREATMENT VALUES (4, 'Hair Loss Treatment', 100);
+INSERT INTO NH_TREATMENT VALUES (5, 'Leg Wax & Care',  20);
+INSERT INTO NH_TREATMENT VALUES (6, 'Spanish Massage', 55);
+INSERT INTO NH_TREATMENT VALUES (7, 'Face Massage', 15);
+INSERT INTO NH_TREATMENT VALUES (8, 'Face Scrub', 18);
+INSERT INTO NH_TREATMENT VALUES (9, 'Voice Therapy', 70);
+INSERT INTO NH_TREATMENT VALUES (10, 'Head Massage', 40);
+INSERT INTO NH_TREATMENT VALUES (11, 'Body Scrub', 60);
+INSERT INTO NH_TREATMENT VALUES (12, 'Stress Therapy', 28.99);
+INSERT INTO NH_TREATMENT VALUES (13, 'Full Body Massage', 50);
+
+
+/* CustomerID INT, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
+INSERT INTO NH_CUSTOMER VALUES
+(1, 'aCustomerName', 'aCustomerSurname', '123456789');
+
+INSERT INTO NH_CUSTOMER VALUES (2, 'aCustomerName2', 'aCustomerSurname3', '123456789');
+INSERT INTO NH_CUSTOMER VALUES (3, 'Jack', 'New', '02089874563');
+INSERT INTO NH_CUSTOMER VALUES (4, 'Ryan', 'ken', '0207589989');
+INSERT INTO NH_CUSTOMER VALUES (5, ' Kai', 'roon', '02087414141');
+INSERT INTO NH_CUSTOMER VALUES (6, 'rick', 'nick', '02082020232');
+INSERT INTO NH_CUSTOMER VALUES (7, 'Adam', 'Ali', '0205255698');
+INSERT INTO NH_CUSTOMER VALUES (8, 'Ray', 'milton', '02085478745');
+INSERT INTO NH_CUSTOMER VALUES (9, 'milly', 'toof', '0208547457');
+INSERT INTO NH_CUSTOMER VALUES (10, 'Brown ', 'Joe', '02087414141');
+INSERT INTO NH_CUSTOMER VALUES (11, 'Lloyd', 'bank', '0208578785');
+INSERT INTO NH_CUSTOMER VALUES (12, 'Fred', 'Eil', '02085488878');
+INSERT INTO NH_CUSTOMER VALUES (13, 'Freddie', 'Elliot', '02085488878');
+INSERT INTO NH_CUSTOMER VALUES (14, 'Bill', 'bush', '02085555893');
+INSERT INTO NH_CUSTOMER VALUES (15, 'red ', 'coe', '02085412569');
+INSERT INTO NH_CUSTOMER VALUES (16, 'Web', 'Ref', '02085411012');
+
+/* GROUP 2 TABLES */
 
 /* StockID INT, ShopID INT, ProductID INT, Quantity INT */
 INSERT INTO NH_STOCK VALUES
 (1, 1, 1, 15);
-
-/* SupplierID INT, Company VARCHAR, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
-INSERT INTO NH_SUPPLIER VALUES
-(0, 'aCompany', 'aName', 'aSurname', 'aPhone');
-
-INSERT INTO NH_SUPPLIER VALUES (1,'HeadCare','Jack','Lee','07908878547'); 
-INSERT INTO NH_SUPPLIER VALUES (2,'HandLove','Red','Clif','07505512336');
-INSERT INTO NH_SUPPLIER VALUES (3,'FootLook','Kelly','Kent','020874121458');
-INSERT INTO NH_SUPPLIER VALUES (4,'BodyCare','Jeff','Kent','07814777874');
-INSERT INTO NH_SUPPLIER VALUES (5,'LookGood','Jimmy','Jay','02085477777');  
-INSERT INTO NH_SUPPLIER VALUES (6,'FirstWax','Ian','Beat','079022121456'); 
-INSERT INTO NH_SUPPLIER VALUES (7,'Cleaning','Ken','Naz','020836987451'); 
-INSERT INTO NH_SUPPLIER VALUES (8,'Marks and Spencer','Melinda','Belius','0759874521');
-INSERT INTO NH_SUPPLIER VALUES (9,'Dont judge our name','George','Jack-the-Elfs','07569874521');
-INSERT INTO NH_SUPPLIER VALUES (10,'Lousy Cleaning','George','Lazyman','0756594521');
-INSERT INTO NH_SUPPLIER VALUES (11,'Croco-Skin','Sting','Tooth','07569874521');
 
 /* OrderID INT, ShopID INT, Date, DATE, Comments VARCHAR */
 INSERT INTO NH_ORDER VALUES
@@ -58,8 +119,17 @@ INSERT INTO NH_ORDER VALUES
 /* ShopID INT, Name VARCHAR, Address VARCHAR, Zip_Code VARCHAR, ManagerID INT*/
 INSERT INTO NH_SHOP VALUES
 (1, 'aShopName', 'anAddress', 'aZip_Code', 2);
-INSERT INTO NH_SHOP VALUES
-(2, 'anothershop', 'anotherAddress', 'aZip', 1);
+
+INSERT INTO NH_SHOP VALUES (2,'Bling','74 Addle Hill','E12 kiu');
+INSERT INTO NH_SHOP VALUES (3,'Sexy SPA','19 Abchurch Yard','nw2 cfr');
+INSERT INTO NH_SHOP VALUES (4,'The Hot Stop','95 Addle Street','s2 6za');
+INSERT INTO NH_SHOP VALUES (5,'Relaxing','64Cutler Street','sw1 2lo');
+INSERT INTO NH_SHOP VALUES (6,'Abbey','9 Cursitor Street','e13 98h');
+INSERT INTO NH_SHOP VALUES (7,'Curls','45 Amen Corner ','n9 9np');
+INSERT INTO NH_SHOP VALUES (8,'Holy Bacon','23 Eastcheap','sw2 5ht');
+INSERT INTO NH_SHOP VALUES (9,'Taj Mahal','49 Elm Court','nw3 3mk');
+INSERT INTO NH_SHOP VALUES (10,'Lookin Good','5 Fetter Lane','E9 o0p');
+INSERT INTO NH_SHOP VALUES (11,'The Jamiro','48 Abchurch Lane','E1 0kl');
 
 /* StockID INT, TreatmentID INT */
 INSERT INTO NH_INVENTORY VALUES
@@ -90,9 +160,8 @@ INSERT INTO NH_SPECIALTY VALUES
 
 /* RoomID INT, ShopID INT, Name VARCHAR, Desc VARCHAR */
 INSERT INTO NH_ROOM VALUES 
-(0, 1, 'aRoomName', 'aRoomDesc');
+(1, 1, 'G.01','Comfy');
 
-INSERT INTO NH_ROOM VALUES (1, 1, 'G.01','Comfy');
 INSERT INTO NH_ROOM VALUES (2, 1, 'G.02','Richmans');
 INSERT INTO NH_ROOM VALUES (3, 1, 'F.01','Cozy');
 INSERT INTO NH_ROOM VALUES (4, 2, 'G.01','Jubilee');
@@ -105,31 +174,6 @@ INSERT INTO NH_ROOM VALUES (10, 6, 'G.01','Ergonomic');
 INSERT INTO NH_ROOM VALUES (11, 7, '117','Body Temple');
 INSERT INTO NH_ROOM VALUES (12, 7, '116','Physical Miracle');
 INSERT INTO NH_ROOM VALUES (13, 3, '1.01','Illumination');
-
-/* TreatmentID INT, Desc VARCHAR, Price DECIMAL, SpecialtyID INT */
-INSERT INTO NH_TREATMENT VALUES
-(0, 'aDescription', 15, 1);
-
-/* CustomerID INT, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
-INSERT INTO NH_CUSTOMER VALUES
-(1, 'aCustomerName', 'aCustomerSurname', '123456789');
-
-INSERT INTO NH_CUSTOMER VALUES (2, 'aCustomerName2', 'aCustomerSurname3', '123456789');
-INSERT INTO NH_CUSTOMER VALUES (3,'Jack','New','02089874563');
-INSERT INTO NH_CUSTOMER VALUES (4,'Ryan','ken','0207589989');
-INSERT INTO NH_CUSTOMER VALUES (5,' Kai','roon','02087414141');
-INSERT INTO NH_CUSTOMER VALUES (6,'rick','nick','02082020232');
-INSERT INTO NH_CUSTOMER VALUES (7,'Adam','Ali','0205255698');
-INSERT INTO NH_CUSTOMER VALUES (8,'Ray','milton','02085478745');
-INSERT INTO NH_CUSTOMER VALUES (9,'milly','toof','0208547457');
-INSERT INTO NH_CUSTOMER VALUES (10,'Brown ','Joe','02087414141');
-INSERT INTO NH_CUSTOMER VALUES (11,'Lloyd','bank','0208578785');
-INSERT INTO NH_CUSTOMER VALUES (12,'Fred','Eil','02085488878');
-INSERT INTO NH_CUSTOMER VALUES (12,'Freddie','Elliot','02085488878');
-INSERT INTO NH_CUSTOMER VALUES (14,'Bill','bush','02085555893');
-INSERT INTO NH_CUSTOMER VALUES (15,'red ','coe','02085412569');
-INSERT INTO NH_CUSTOMER VALUES (16,'Web','Ref','02085411012');
-
 
 
 /* BookingID INT, RoomID INT, EmployeeID INT, CustomerID INT, TreatmentID INT, Date DATE, Price DECIMAL */
