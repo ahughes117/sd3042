@@ -67,7 +67,7 @@ INSERT INTO NH_INVENTORY VALUES
 
 /* EmployeeID INT, ShopID INT, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
 INSERT INTO NH_EMPLOYEE VALUES
-(1, 2, 'anEmployeeName', 'anEmployeeSurname', '123456789');
+(1, 1, 'anEmployeeName', 'anEmployeeSurname', '123456789');
 
 INSERT INTO NH_EMPLOYEE VALUES (2, 1, 'Manager', 'Badass', '123456789');
 INSERT INTO NH_EMPLOYEE VALUES (3,1, 'Employee', 'Tool', '123456789');
@@ -89,12 +89,26 @@ INSERT INTO NH_SPECIALTY VALUES
 (1, 'aSpecialtyDescription');
 
 /* RoomID INT, ShopID INT, Name VARCHAR, Desc VARCHAR */
-INSERT INTO NH_ROOM VALUES
-(1, 'aRoomName', 'aRoomDesc');
+INSERT INTO NH_ROOM VALUES 
+(0, 1, 'aRoomName', 'aRoomDesc');
+
+INSERT INTO NH_ROOM VALUES (1, 1, 'G.01','Comfy');
+INSERT INTO NH_ROOM VALUES (2, 1, 'G.02','Richmans');
+INSERT INTO NH_ROOM VALUES (3, 1, 'F.01','Cozy');
+INSERT INTO NH_ROOM VALUES (4, 2, 'G.01','Jubilee');
+INSERT INTO NH_ROOM VALUES (5, 3, 'G.01','Estate');
+INSERT INTO NH_ROOM VALUES (6, 3, 'G.02','Mansion');
+INSERT INTO NH_ROOM VALUES (7, 5, 'E.12','Hand King');
+INSERT INTO NH_ROOM VALUES (8, 5, 'E.13','Foot King');
+INSERT INTO NH_ROOM VALUES (9, 5, 'F.12','21st century');
+INSERT INTO NH_ROOM VALUES (10, 6, 'G.01','Ergonomic');
+INSERT INTO NH_ROOM VALUES (11, 7, '117','Body Temple');
+INSERT INTO NH_ROOM VALUES (12, 7, '116','Physical Miracle');
+INSERT INTO NH_ROOM VALUES (13, 3, '1.01','Illumination');
 
 /* TreatmentID INT, Desc VARCHAR, Price DECIMAL, SpecialtyID INT */
 INSERT INTO NH_TREATMENT VALUES
-(1, 'aDescription', 15, 1);
+(0, 'aDescription', 15, 1);
 
 /* CustomerID INT, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
 INSERT INTO NH_CUSTOMER VALUES
