@@ -37,7 +37,19 @@ INSERT INTO NH_STOCK VALUES
 
 /* SupplierID INT, Company VARCHAR, Name VARCHAR, Surname VARCHAR, Telephone VARCHAR */
 INSERT INTO NH_SUPPLIER VALUES
-(1, 'aCompany', 'aName', 'aSurname', 'aPhone');
+(0, 'aCompany', 'aName', 'aSurname', 'aPhone');
+
+INSERT INTO NH_SUPPLIER VALUES (1,'HeadCare','Jack','Lee','07908878547'); 
+INSERT INTO NH_SUPPLIER VALUES (2,'HandLove','Red','Clif','07505512336');
+INSERT INTO NH_SUPPLIER VALUES (3,'FootLook','Kelly','Kent','020874121458');
+INSERT INTO NH_SUPPLIER VALUES (4,'BodyCare','Jeff','Kent','07814777874');
+INSERT INTO NH_SUPPLIER VALUES (5,'LookGood','Jimmy','Jay','02085477777');  
+INSERT INTO NH_SUPPLIER VALUES (6,'FirstWax','Ian','Beat','079022121456'); 
+INSERT INTO NH_SUPPLIER VALUES (7,'Cleaning','Ken','Naz','020836987451'); 
+INSERT INTO NH_SUPPLIER VALUES (8,'Marks and Spencer','Melinda','Belius','0759874521');
+INSERT INTO NH_SUPPLIER VALUES (9,'Dont judge our name','George','Jack-the-Elfs','07569874521');
+INSERT INTO NH_SUPPLIER VALUES (10,'Lousy Cleaning','George','Lazyman','0756594521');
+INSERT INTO NH_SUPPLIER VALUES (11,'Croco-Skin','Sting','Tooth','07569874521');
 
 /* OrderID INT, ShopID INT, Date, DATE, Comments VARCHAR */
 INSERT INTO NH_ORDER VALUES
