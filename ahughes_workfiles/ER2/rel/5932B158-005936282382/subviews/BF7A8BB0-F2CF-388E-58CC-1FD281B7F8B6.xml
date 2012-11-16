@@ -156,7 +156,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="1189" y="513"/>
-<point x="1498" y="421"/>
+<point x="1430" y="421"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B068A6A8-5EC7-0715-3A82-5E88C1B71F30" otype="FKIndexAssociation" vid_source="2D760B74-0143-6ECB-4A03-E206BFA89FF9" vid_target="30F67F58-44B5-1346-C9DC-53E903F0D490">
