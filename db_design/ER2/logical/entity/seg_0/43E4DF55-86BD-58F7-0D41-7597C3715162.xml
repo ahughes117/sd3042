@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="43E4DF55-86BD-58F7-0D41-7597C3715162" directorySegmentName="seg_0" name="EmpSpec">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>1881AD0F-143D-988C-9C28-3DF51B7CB504</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<pkName>EmpSpec_PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="EmployeeID" id="551E9DB5-4161-3330-6C30-F4D1E2856B01">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>627FC691-1063-392C-6872-0F2B05B7EBC2</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>379C43EC-B467-7B81-E126-AF2F9288610C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="SpecialtyID" id="4EED4530-64AC-C0DC-5BA5-A8E3EB9D8B6D">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>4C40ECE1-9E71-40CD-554A-685DDC4D03C8</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>574DAED0-AB70-8E31-CF3F-1FD2A7CAA6BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="Date" id="52AAC908-D218-5F01-31BA-BE9E794E4052">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>75BFF9EC-4E5F-1EC7-55B9-C55D6B089E75</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="72BF8075-D2CB-C8B1-C457-6A2037F8A2BE" name="EmpSpec_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>1CC10FDB-1C61-2AB6-36A8-216117BC9E37</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>551E9DB5-4161-3330-6C30-F4D1E2856B01</attributeRef>
+<attributeRef>4EED4530-64AC-C0DC-5BA5-A8E3EB9D8B6D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

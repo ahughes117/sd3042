@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="NH_TREATMENT_NH_SPECIALTY_FK" id="CE1B67E3-4F25-53C4-EDCD-EBDFFD434C58" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 20:26:36 UTC</createdTime>
+<generatorID>C4EA7A31-41EC-6CDD-2679-A754252A2180</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E564F7B9-D680-2C3C-3EC2-32FA8003DBFE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3175E21B-68BD-C520-6456-85EDDECB08A8</targetEntity>
+<transferable>true</transferable>
+</Relation>

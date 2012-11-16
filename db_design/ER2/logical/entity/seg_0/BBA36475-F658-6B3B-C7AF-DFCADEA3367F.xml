@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="BBA36475-F658-6B3B-C7AF-DFCADEA3367F" directorySegmentName="seg_0" name="SupShop">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>408653DD-84F2-754A-BCA7-B86B6F7BC334</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<pkName>SupShop_PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>SupplierShop</shortName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="SupplierID" id="62004B00-3A70-CE6F-A5D0-9E0EB904DAD9">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>8B8FBB78-6B25-DBE8-A0FF-7AB223FA1A78</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>A0F91593-56B4-DDA1-164F-D6A8CD32AE0D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="ShopID" id="909E6BDB-CB67-17A2-BD17-DD13BCBE8645">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>AE93A54D-D03E-6127-8F62-7A3AC6DAD42F</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>E1049BDC-936C-3963-2BDF-AAC8744C7EE5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="99FDCD1A-0CBC-2BB0-D759-F0DF5CA6CDAE" name="SupShop_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>BE26F835-0BED-7969-9AF7-8DA79D0A9EB0</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>62004B00-3A70-CE6F-A5D0-9E0EB904DAD9</attributeRef>
+<attributeRef>909E6BDB-CB67-17A2-BD17-DD13BCBE8645</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

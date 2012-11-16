@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="2DAE7E8F-4A50-755D-25C5-4BE25964E76E" directorySegmentName="seg_0" name="NH_ROOM">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:15:41 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>Room_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="RoomID" id="DFABC84D-3508-340B-AE07-6C6AD45E8DE2">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:15:55 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ShopID" id="213D00D7-A4DD-DE95-CE22-14608AA84FAA">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:19:52 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>44B5B31E-984B-C5EB-3FCC-83FEF0FDC330</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="971292DE-6521-2530-51BB-D256C55FCBE3" referredColumn="44B5B31E-984B-C5EB-3FCC-83FEF0FDC330"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Name" id="22BABA6B-EEDF-D9BF-F2AC-45D7C4D02C75">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:16:10 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Description" id="3161CB91-4330-FECB-7E31-669C578FB8C5">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:16:29 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="56009348-D24C-325A-A610-6063B3F872AB" name="Room_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:15:55 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="DFABC84D-3508-340B-AE07-6C6AD45E8DE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C2E4237D-E53B-2D6A-34FC-81B411D2BC40" name="Room_Shop_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:19:52 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="213D00D7-A4DD-DE95-CE22-14608AA84FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

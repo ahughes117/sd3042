@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="26CF90EA-949E-25F3-F1BE-25E2F1018A4D" directorySegmentName="seg_0" name="NH_ORDERPRODUCT">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:21:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>OrderProduct_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="OrderID" id="9769FDA8-ED11-205C-6989-9DC0BF801B83">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:22:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>E9FFAC8B-B47F-6F5E-7FAD-49E88906F56E</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D42A4EB-4838-07B3-A3E1-483773C24203" referredColumn="E9FFAC8B-B47F-6F5E-7FAD-49E88906F56E"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ProductID" id="3D8F9E76-D32C-2C53-7C21-FBD3EF411619">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:22:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>12E97EAC-C2D8-11DB-22FD-6F3074CEF15C</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07AB732A-DB5B-82A2-7AC8-9AD55B634EA2" referredColumn="12E97EAC-C2D8-11DB-22FD-6F3074CEF15C"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C7128DF9-EE81-A923-EE63-D311D568AE74" name="OrderProduct_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:22:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="9769FDA8-ED11-205C-6989-9DC0BF801B83"/>
+<colUsage columnID="3D8F9E76-D32C-2C53-7C21-FBD3EF411619"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="A61E395E-D77B-0176-F1C5-95DDCC828A18" name="TABLE_7_Order_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:22:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="9769FDA8-ED11-205C-6989-9DC0BF801B83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="90B3373B-7273-24D0-8E75-EE844371F297" name="OrderProduct_Product_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:22:33 UTC</createdTime>
+<generatorID>07F3E7C8-6C49-0C67-42E9-1AD56C9FD4CD</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="3D8F9E76-D32C-2C53-7C21-FBD3EF411619"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

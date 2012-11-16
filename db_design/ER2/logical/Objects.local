@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="43E4DF55-86BD-58F7-0D41-7597C3715162" name="EmpSpec" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4FCA103F-1CA9-BC39-9701-CEF081769C68" name="Employee" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FF8006FD-B1B3-526E-9E6C-2048F1C4652E" name="Inventory" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B8EC39EA-2B9B-E736-75AB-6D03DA92CAD1" name="Order" seqName="seg_0"/>
+   <object objectType="Entity" objectID="34EF3865-22FC-620A-0E0E-89CCF5F55645" name="OrderProduct" seqName="seg_0"/>
+   <object objectType="Entity" objectID="5B496F7F-3B16-5B2F-1195-FAD8BBB7B518" name="ProdSup" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D6102033-1AA3-AE46-3E17-5FF01931410E" name="Product" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FA5E5672-7B7D-578C-565E-1352B6B7B703" name="Room" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C35A7157-3AC9-41AB-7A5D-A018798CF8F1" name="Shop" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E564F7B9-D680-2C3C-3EC2-32FA8003DBFE" name="Specialty" seqName="seg_0"/>
+   <object objectType="Entity" objectID="A496516B-41E3-907D-24A6-E035EF65F2C6" name="Stock" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BBA36475-F658-6B3B-C7AF-DFCADEA3367F" name="SupShop" seqName="seg_0"/>
+   <object objectType="Entity" objectID="81592B0D-8250-ECE9-F585-F38BF7329CBA" name="Supplier" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3175E21B-68BD-C520-6456-85EDDECB08A8" name="Treatment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2CFF2E82-18E5-B4FE-E807-57178748E528" name="db_BOOKING" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0BF1A389-F5D7-E9DD-2511-C179B5B1C38F" name="db_CUSTOMER" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7C4AA732-D765-60F4-AD67-37508C3AD2D4" name="Booking_Customer_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="818B6008-2D57-32E3-343E-EB681FE24312" name="Booking_Employee_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="248EBE83-4BBB-753B-74DD-08C7F6F729C6" name="Booking_Room_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D300DF53-ABEA-4974-E316-E4EABBD0C718" name="Booking_Treatment_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="627FC691-1063-392C-6872-0F2B05B7EBC2" name="EmpSpec_Employee_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4C40ECE1-9E71-40CD-554A-685DDC4D03C8" name="EmpSpec_Specialty_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D5490D10-1586-5E87-A538-4B108E00E270" name="Employee_Shop_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EE669755-AE2C-9EF3-E918-56DA17ED0052" name="Inventory_Stock_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A5025C9B-4861-312F-FC9B-A4ABA1C6D95B" name="Inventory_Treatment_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CE1B67E3-4F25-53C4-EDCD-EBDFFD434C58" name="NH_TREATMENT_NH_SPECIALTY_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="78DEDCCE-0DC5-6735-4CCC-2EE89EB4ABC3" name="OrderProduct_Product_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="44FA94A7-5DCA-B1BF-60A7-0361C9ED6B11" name="Order_Shop_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8AFEAEBC-9B9D-EC70-546A-CC1B87927D8D" name="ProdSup_Product_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="66686698-8176-77E2-6BAA-18DC1364CC91" name="ProdSup_Supplier_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D6F78BF3-8966-2412-2E17-646826DBE9BF" name="Room_Shop_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="809A9BFD-3521-4EDA-B81D-55F1C782E4A2" name="Shop_Employee_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EC3CA4E0-2E9E-49F7-8FE5-3AA8C5D99DA2" name="Stock_Product_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="53085FC2-B250-5B46-3519-F8C268531182" name="Stock_Shop_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AE93A54D-D03E-6127-8F62-7A3AC6DAD42F" name="SupShop_Shop_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8B8FBB78-6B25-DBE8-A0FF-7AB223FA1A78" name="SupShop_Supplier_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="676DFF00-62EF-2473-5F92-5CB3C73BE85B" name="TABLE_7_Order_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

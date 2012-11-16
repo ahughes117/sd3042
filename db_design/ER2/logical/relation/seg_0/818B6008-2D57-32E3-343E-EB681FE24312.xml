@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Booking_Employee_FK" id="818B6008-2D57-32E3-343E-EB681FE24312" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>B068A6A8-5EC7-0715-3A82-5E88C1B71F30</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FCA103F-1CA9-BC39-9701-CEF081769C68</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2CFF2E82-18E5-B4FE-E807-57178748E528</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,12 @@
+Function to automatically book a room for a specific treatment, to a specific customer.
+In order to be fancy, it needs to present the user the schedule of a particular room, the availability hours, etc.
+Also it needs to calculate automatically the discount of the customer. (trigger)
+
+Function to automatically advise the user when stock reaches minimum. Also it could be really fancy to present the user the available suppliers for the particular product and shop.
+
+Script to send query and maybe print a report for the three last questions.
+
+Q4
+SELECT E.NAME, E.SURNAME, M.NAME, M.SURNAME
+FROM EMPLOYEE E, EMPLOYEE M, SHOP S
+WHERE M.EmployeeID = S.ManagerID AND E.ShopID = 

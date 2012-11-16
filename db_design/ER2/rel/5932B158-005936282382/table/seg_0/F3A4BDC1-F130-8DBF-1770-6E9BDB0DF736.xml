@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="F3A4BDC1-F130-8DBF-1770-6E9BDB0DF736" directorySegmentName="seg_0" name="NH_INVENTORY">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:03:28 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>Inventory_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="StockID" id="5B8BF722-E414-1538-596A-CF68CC11C890">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:03:56 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>4C43D4DB-A281-AD26-88BA-5D002CA6A7F3</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E5BCA35-CF05-F531-1E41-9EE046F1CD8A" referredColumn="4C43D4DB-A281-AD26-88BA-5D002CA6A7F3"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TreatmentID" id="607337DC-F055-88A4-AE06-75E9529866F3">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:03:56 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8D42D3F8-6F5B-B1C9-539A-7819CEE292BD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD4F85C8-A9F6-639C-51AB-975A5E7433DA" referredColumn="8D42D3F8-6F5B-B1C9-539A-7819CEE292BD"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="CCE9D167-058E-61CB-6427-D2A05A4CA412" name="Inventory_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:03:56 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="607337DC-F055-88A4-AE06-75E9529866F3"/>
+<colUsage columnID="5B8BF722-E414-1538-596A-CF68CC11C890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="40CFBDFD-8C45-A981-A2F8-E4C3E9B9E5AE" name="Inventory_Stock_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:04:15 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="5B8BF722-E414-1538-596A-CF68CC11C890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="EFC731F5-2A29-98DC-DBDA-E4B25F92A579" name="Inventory_Treatment_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:06:10 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="607337DC-F055-88A4-AE06-75E9529866F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

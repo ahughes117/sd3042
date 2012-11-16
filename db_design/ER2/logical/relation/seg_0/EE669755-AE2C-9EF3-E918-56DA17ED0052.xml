@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Inventory_Stock_FK" id="EE669755-AE2C-9EF3-E918-56DA17ED0052" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>7E5BCA35-CF05-F531-1E41-9EE046F1CD8A</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A496516B-41E3-907D-24A6-E035EF65F2C6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FF8006FD-B1B3-526E-9E6C-2048F1C4652E</targetEntity>
+<transferable>true</transferable>
+</Relation>

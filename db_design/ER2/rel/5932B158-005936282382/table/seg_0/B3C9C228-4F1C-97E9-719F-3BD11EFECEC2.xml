@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="B3C9C228-4F1C-97E9-719F-3BD11EFECEC2" directorySegmentName="seg_0" name="NH_TREATMENT">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:04:52 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>Treatment_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TreatmentID" id="8D42D3F8-6F5B-B1C9-539A-7819CEE292BD">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:05:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Description" id="FDBFC01F-EE53-F2FC-F6C2-B85520B318D6">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 20:26:25 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Price" id="B2901876-1A84-2C46-2F44-5B7D33FE16C2">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:05:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="SpecialtyID" id="1AADEA7A-B210-BBFE-384A-97DBEBA2AE1F">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:05:52 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>284302A1-C8DB-4FDB-A362-A580783C6741</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4EA7A31-41EC-6CDD-2679-A754252A2180" referredColumn="284302A1-C8DB-4FDB-A362-A580783C6741"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="B8CEAA3A-A36C-E255-AD54-D5B2B7EB5F07" name="Treatment_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:05:18 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8D42D3F8-6F5B-B1C9-539A-7819CEE292BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="E5AFF97D-6F87-8E29-D709-8E5C75445ECD" name="NH_TREATMENT_NH_SPECIALTY_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 20:24:52 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="1AADEA7A-B210-BBFE-384A-97DBEBA2AE1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

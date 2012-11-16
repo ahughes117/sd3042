@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="FF1A6250-2D9D-A845-8635-73C1230E4CED" name="NH_BOOKING" seqName="seg_0"/>
+   <object objectType="Table" objectID="0B5B86C9-32F9-69E0-3DAC-DAF9B4245A65" name="NH_CUSTOMER" seqName="seg_0"/>
+   <object objectType="Table" objectID="F988D63B-A211-7287-8637-044E77C645E1" name="NH_EMPLOYEE" seqName="seg_0"/>
+   <object objectType="Table" objectID="1881AD0F-143D-988C-9C28-3DF51B7CB504" name="NH_EMPSPEC" seqName="seg_0"/>
+   <object objectType="Table" objectID="F3A4BDC1-F130-8DBF-1770-6E9BDB0DF736" name="NH_INVENTORY" seqName="seg_0"/>
+   <object objectType="Table" objectID="649DA762-1FC2-43FB-AC6E-0C5DB115CE09" name="NH_ORDER" seqName="seg_0"/>
+   <object objectType="Table" objectID="26CF90EA-949E-25F3-F1BE-25E2F1018A4D" name="NH_ORDERPRODUCT" seqName="seg_0"/>
+   <object objectType="Table" objectID="56E00D1B-25E5-9929-CB4D-35437E82F645" name="NH_PRODSUP" seqName="seg_0"/>
+   <object objectType="Table" objectID="521A55EC-2417-6070-BDF7-A8BB061014E9" name="NH_PRODUCT" seqName="seg_0"/>
+   <object objectType="Table" objectID="2DAE7E8F-4A50-755D-25C5-4BE25964E76E" name="NH_ROOM" seqName="seg_0"/>
+   <object objectType="Table" objectID="CE5A8983-4863-130D-68FA-4358167401EE" name="NH_SHOP" seqName="seg_0"/>
+   <object objectType="Table" objectID="4E28B938-1D01-3D3C-BE15-67593A41386F" name="NH_SPECIALTY" seqName="seg_0"/>
+   <object objectType="Table" objectID="1CC41F1C-39CC-FCAA-1A54-583AF29DAF5F" name="NH_STOCK" seqName="seg_0"/>
+   <object objectType="Table" objectID="79F7A1EE-B906-24AE-4CE7-2594536C53B3" name="NH_SUPPLIER" seqName="seg_0"/>
+   <object objectType="Table" objectID="408653DD-84F2-754A-BCA7-B86B6F7BC334" name="NH_SUPSHOP" seqName="seg_0"/>
+   <object objectType="Table" objectID="B3C9C228-4F1C-97E9-719F-3BD11EFECEC2" name="NH_TREATMENT" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E13773EA-B4FA-DB3E-B951-A1F4FFB1CD19" name="Booking_Customer_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B068A6A8-5EC7-0715-3A82-5E88C1B71F30" name="Booking_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7C1C160D-6110-C0D0-2DB4-3E28652BA80D" name="Booking_Room_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="AE3C8BC1-9776-8C63-AACF-3FA31C323884" name="Booking_Treatment_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="23AB69BA-29F5-97BA-9BC6-ACBE82507E15" name="EmpSpec_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="911445B1-79CA-5575-5CE1-EBB8AFA35567" name="EmpSpec_Specialty_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DF2AAAD4-473B-7711-C3C6-E7B7A07F2D79" name="Employee_Shop_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7E5BCA35-CF05-F531-1E41-9EE046F1CD8A" name="Inventory_Stock_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BD4F85C8-A9F6-639C-51AB-975A5E7433DA" name="Inventory_Treatment_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C4EA7A31-41EC-6CDD-2679-A754252A2180" name="NH_TREATMENT_NH_SPECIALTY_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="07AB732A-DB5B-82A2-7AC8-9AD55B634EA2" name="OrderProduct_Product_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E02A74CD-0D3D-025C-721D-B8B00D3BC369" name="Order_Shop_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="50EE8888-536B-A8AE-1A3F-D973A3C3F665" name="ProdSup_Product_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8859861F-6E28-CC14-C03D-7EDF80642ED8" name="ProdSup_Supplier_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="971292DE-6521-2530-51BB-D256C55FCBE3" name="Room_Shop_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="613F22C6-BECD-5399-3B83-DE73B8131CB5" name="Shop_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="40C98C39-00A4-E729-BED9-608534249B32" name="Stock_Product_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E4EDAB07-63A6-2C45-CFCF-C43E2C73BA48" name="Stock_Shop_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7E573290-3E31-66D4-7C56-DEA674F9CDC5" name="SupShop_Shop_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4B0C6824-302B-5477-6816-A7FC5D8640A8" name="SupShop_Supplier_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3D42A4EB-4838-07B3-A3E1-483773C24203" name="TABLE_7_Order_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

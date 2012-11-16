@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="ER2" id="5932B158-7070-82D9-C894-005936282382" mainViewID="BF7A8BB0-F2CF-388E-58CC-1FD281B7F8B6">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-14 10:41:33 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

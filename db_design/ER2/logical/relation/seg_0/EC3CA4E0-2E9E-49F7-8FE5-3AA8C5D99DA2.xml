@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Stock_Product_FK" id="EC3CA4E0-2E9E-49F7-8FE5-3AA8C5D99DA2" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>40C98C39-00A4-E729-BED9-608534249B32</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D6102033-1AA3-AE46-3E17-5FF01931410E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A496516B-41E3-907D-24A6-E035EF65F2C6</targetEntity>
+<transferable>true</transferable>
+</Relation>

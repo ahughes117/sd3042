@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="2CFF2E82-18E5-B4FE-E807-57178748E528" directorySegmentName="seg_0" name="db_BOOKING">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>FF1A6250-2D9D-A845-8635-73C1230E4CED</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<pkName>Booking_PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="RoomID" id="0A50B452-1E3C-3686-A66B-2B189FCB328E">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>248EBE83-4BBB-753B-74DD-08C7F6F729C6</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>E3046694-157E-ED26-65E5-6C39B2476166</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="EmployeeID" id="2D4A45A5-B022-4CF8-2243-6C441C18129B">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>818B6008-2D57-32E3-343E-EB681FE24312</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>379C43EC-B467-7B81-E126-AF2F9288610C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="CustomerID" id="F688A7F0-A48E-D731-7F49-46A98DE4DC37">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>7C4AA732-D765-60F4-AD67-37508C3AD2D4</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>86C1C311-0B97-BAD0-8590-9CCB31F36DA2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="TreatmentID" id="56074DFF-20EA-FC04-2B36-EDDFED506492">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>D300DF53-ABEA-4974-E316-E4EABBD0C718</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<referedAttribute>798E752D-C0F4-6101-9A68-BEA2BCD7EF4C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="Date" id="780DC34B-2595-2B31-298A-AF006DA9358A">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>A05F9BD3-4FBF-85B6-4E7D-0641C9968942</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="Price" id="9E3F65A7-D9B2-4065-0C26-B4B8F62B03DA">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>B3B5235C-0DE9-8A0A-5F8D-6C57CF9681F4</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="BookingID" id="B899A0A3-0448-30AC-A589-72A19A7C4B11">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 20:30:45 UTC</createdTime>
+<generatorID>926BDB84-40C5-003D-ABF1-FB73CE3D7512</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="ED92AABD-0201-42ED-858B-6B19E9724571" name="Booking_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>F63B7D40-65C6-E267-2D7B-7C4262009B0D</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B899A0A3-0448-30AC-A589-72A19A7C4B11</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

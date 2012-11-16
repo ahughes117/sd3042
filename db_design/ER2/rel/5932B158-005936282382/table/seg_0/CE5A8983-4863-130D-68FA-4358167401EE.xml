@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="CE5A8983-4863-130D-68FA-4358167401EE" directorySegmentName="seg_0" name="NH_SHOP">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:06:24 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>Shop_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ShopID" id="44B5B31E-984B-C5EB-3FCC-83FEF0FDC330">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:07:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Name" id="8E8A0507-7425-C483-1D30-497BFB0CDE04">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:07:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Address" id="51868EC3-7867-60AF-A52F-1D5F2B02773B">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 23:03:32 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ZipCode" id="F9DB4D7F-3775-CE6D-C788-E7312F2DB737">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:07:37 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ManagerID" id="238DB0BC-7349-8D97-9273-AF58A0A23A80">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:10:49 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5CC2F5AF-CBC6-D6A1-5809-3FDFFF61E738</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="613F22C6-BECD-5399-3B83-DE73B8131CB5" referredColumn="5CC2F5AF-CBC6-D6A1-5809-3FDFFF61E738"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="027D50DD-B2FD-B019-1A87-35209F802BBC" name="Shop_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:07:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="44B5B31E-984B-C5EB-3FCC-83FEF0FDC330"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="E2F7C5DE-8959-D38F-98E2-4ABA2AC4AB9C" name="Shop_Employee_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:11:28 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="238DB0BC-7349-8D97-9273-AF58A0A23A80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

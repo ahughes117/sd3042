@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SupShop_Supplier_FK" id="8B8FBB78-6B25-DBE8-A0FF-7AB223FA1A78" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>4B0C6824-302B-5477-6816-A7FC5D8640A8</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81592B0D-8250-ECE9-F585-F38BF7329CBA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BBA36475-F658-6B3B-C7AF-DFCADEA3367F</targetEntity>
+<transferable>true</transferable>
+</Relation>

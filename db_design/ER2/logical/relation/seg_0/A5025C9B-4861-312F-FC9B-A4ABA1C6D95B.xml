@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Inventory_Treatment_FK" id="A5025C9B-4861-312F-FC9B-A4ABA1C6D95B" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>BD4F85C8-A9F6-639C-51AB-975A5E7433DA</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3175E21B-68BD-C520-6456-85EDDECB08A8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FF8006FD-B1B3-526E-9E6C-2048F1C4652E</targetEntity>
+<transferable>true</transferable>
+</Relation>

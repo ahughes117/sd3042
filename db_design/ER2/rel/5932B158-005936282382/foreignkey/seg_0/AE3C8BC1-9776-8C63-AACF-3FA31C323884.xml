@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="AE3C8BC1-9776-8C63-AACF-3FA31C323884" directorySegmentName="seg_0" name="Booking_Treatment_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:34:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<containerWithKeyObject>FF1A6250-2D9D-A845-8635-73C1230E4CED</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>050AE033-86D5-3248-A1C5-69566A3E6B89</localFKIndex>
+<keyObject>B8CEAA3A-A36C-E255-AD54-D5B2B7EB5F07</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

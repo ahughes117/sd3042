@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Booking_Room_FK" id="248EBE83-4BBB-753B-74DD-08C7F6F729C6" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>7C1C160D-6110-C0D0-2DB4-3E28652BA80D</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FA5E5672-7B7D-578C-565E-1352B6B7B703</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2CFF2E82-18E5-B4FE-E807-57178748E528</targetEntity>
+<transferable>true</transferable>
+</Relation>

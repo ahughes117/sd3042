@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="971292DE-6521-2530-51BB-D256C55FCBE3" directorySegmentName="seg_0" name="Room_Shop_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:19:52 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<containerWithKeyObject>2DAE7E8F-4A50-755D-25C5-4BE25964E76E</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>C2E4237D-E53B-2D6A-34FC-81B411D2BC40</localFKIndex>
+<keyObject>027D50DD-B2FD-B019-1A87-35209F802BBC</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

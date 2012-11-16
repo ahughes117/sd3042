@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EmpSpec_Employee_FK" id="627FC691-1063-392C-6872-0F2B05B7EBC2" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:18:01 UTC</createdTime>
+<generatorID>23AB69BA-29F5-97BA-9BC6-ACBE82507E15</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FCA103F-1CA9-BC39-9701-CEF081769C68</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>43E4DF55-86BD-58F7-0D41-7597C3715162</targetEntity>
+<transferable>true</transferable>
+</Relation>

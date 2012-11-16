@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="56E00D1B-25E5-9929-CB4D-35437E82F645" directorySegmentName="seg_0" name="NH_PRODSUP">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:00:19 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>ProdSup_PK</pkName>
+<abbreviation>ProductSupplier</abbreviation>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ProductID" id="715302DA-0A0D-E294-365D-9BE5EACF26FF">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:02:00 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>12E97EAC-C2D8-11DB-22FD-6F3074CEF15C</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50EE8888-536B-A8AE-1A3F-D973A3C3F665" referredColumn="12E97EAC-C2D8-11DB-22FD-6F3074CEF15C"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="SupplierID" id="566B1F99-8D50-5C84-177A-6FBD1A1D74A2">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:02:40 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>45C3EF73-D34A-A5F9-CFB0-FCF5E29CB6D2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8859861F-6E28-CC14-C03D-7EDF80642ED8" referredColumn="45C3EF73-D34A-A5F9-CFB0-FCF5E29CB6D2"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="8B64DE9E-8807-3136-792A-24AD24E2BBBB" name="ProdSup_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:02:25 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="715302DA-0A0D-E294-365D-9BE5EACF26FF"/>
+<colUsage columnID="566B1F99-8D50-5C84-177A-6FBD1A1D74A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="0D0150D4-166F-6D19-AA99-6C0B409E8A3E" name="ProdSup_Product_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:04:58 UTC</createdTime>
+<generatorID>07F3E7C8-6C49-0C67-42E9-1AD56C9FD4CD</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="715302DA-0A0D-E294-365D-9BE5EACF26FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="5B9BAB4C-53E7-97B3-3E1C-ADBFF3448888" name="ProdSup_Supplier_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:05:07 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="566B1F99-8D50-5C84-177A-6FBD1A1D74A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

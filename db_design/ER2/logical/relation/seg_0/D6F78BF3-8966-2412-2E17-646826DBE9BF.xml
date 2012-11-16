@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Room_Shop_FK" id="D6F78BF3-8966-2412-2E17-646826DBE9BF" directorySegmentName="seg_0">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 17:44:15 UTC</createdTime>
+<generatorID>971292DE-6521-2530-51BB-D256C55FCBE3</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5932B158-7070-82D9-C894-005936282382" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C35A7157-3AC9-41AB-7A5D-A018798CF8F1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA5E5672-7B7D-578C-565E-1352B6B7B703</targetEntity>
+<transferable>true</transferable>
+</Relation>

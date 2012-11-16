@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="8859861F-6E28-CC14-C03D-7EDF80642ED8" directorySegmentName="seg_0" name="ProdSup_Supplier_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 12:05:07 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<containerWithKeyObject>56E00D1B-25E5-9929-CB4D-35437E82F645</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>5B9BAB4C-53E7-97B3-3E1C-ADBFF3448888</localFKIndex>
+<keyObject>EFC2B539-214B-3E5D-32E1-0888B69487C9</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

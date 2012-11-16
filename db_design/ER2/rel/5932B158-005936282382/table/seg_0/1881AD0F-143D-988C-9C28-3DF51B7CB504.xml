@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="1881AD0F-143D-988C-9C28-3DF51B7CB504" directorySegmentName="seg_0" name="NH_EMPSPEC">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:13:43 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>EmpSpec_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="EmployeeID" id="E8EE5539-D85D-8153-3308-69700D375B4F">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:13:56 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5CC2F5AF-CBC6-D6A1-5809-3FDFFF61E738</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23AB69BA-29F5-97BA-9BC6-ACBE82507E15" referredColumn="5CC2F5AF-CBC6-D6A1-5809-3FDFFF61E738"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="SpecialtyID" id="82DDB27A-AFD0-B3DC-777A-F68D6EBC64C6">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:14:26 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>284302A1-C8DB-4FDB-A362-A580783C6741</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="911445B1-79CA-5575-5CE1-EBB8AFA35567" referredColumn="284302A1-C8DB-4FDB-A362-A580783C6741"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Date" id="75BFF9EC-4E5F-1EC7-55B9-C55D6B089E75">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:15:16 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="1CC10FDB-1C61-2AB6-36A8-216117BC9E37" name="EmpSpec_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:14:26 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E8EE5539-D85D-8153-3308-69700D375B4F"/>
+<colUsage columnID="82DDB27A-AFD0-B3DC-777A-F68D6EBC64C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="769A1933-9459-D920-0F4D-92681C0E794F" name="EmpSpec_Employee_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:14:26 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="E8EE5539-D85D-8153-3308-69700D375B4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="8618DA80-B5EC-6955-467C-BCC3A4FE95EC" name="EmpSpec_Specialty_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:14:37 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="82DDB27A-AFD0-B3DC-777A-F68D6EBC64C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

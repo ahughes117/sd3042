@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="FF1A6250-2D9D-A845-8635-73C1230E4CED" directorySegmentName="seg_0" name="NH_BOOKING">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:32:05 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pkName>Booking_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="BookingID" id="926BDB84-40C5-003D-ABF1-FB73CE3D7512">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 20:30:27 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="RoomID" id="82DDC3DF-8026-8824-B97F-9B15D85DDF0F">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:33:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DFABC84D-3508-340B-AE07-6C6AD45E8DE2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C1C160D-6110-C0D0-2DB4-3E28652BA80D" referredColumn="DFABC84D-3508-340B-AE07-6C6AD45E8DE2"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="EmployeeID" id="AD48C43B-718A-5F9D-7EAC-30167F8CC10D">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:33:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5CC2F5AF-CBC6-D6A1-5809-3FDFFF61E738</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B068A6A8-5EC7-0715-3A82-5E88C1B71F30" referredColumn="5CC2F5AF-CBC6-D6A1-5809-3FDFFF61E738"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CustomerID" id="8B36DD90-DC2B-F920-7EA9-49F7014CB9AA">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:33:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9F8612C9-53EE-7716-026D-3C7BAA8A8692</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E13773EA-B4FA-DB3E-B951-A1F4FFB1CD19" referredColumn="9F8612C9-53EE-7716-026D-3C7BAA8A8692"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TreatmentID" id="3B597687-B3F6-D0CE-D21F-BA8EAEDCD845">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:33:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8D42D3F8-6F5B-B1C9-539A-7819CEE292BD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE3C8BC1-9776-8C63-AACF-3FA31C323884" referredColumn="8D42D3F8-6F5B-B1C9-539A-7819CEE292BD"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Date" id="A05F9BD3-4FBF-85B6-4E7D-0641C9968942">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:33:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Price" id="B3B5235C-0DE9-8A0A-5F8D-6C57CF9681F4">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:36:59 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="F63B7D40-65C6-E267-2D7B-7C4262009B0D" name="Booking_PK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:33:06 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="926BDB84-40C5-003D-ABF1-FB73CE3D7512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="2C41EF33-C14A-668B-CD41-3F005DAEE363" name="Booking_Customer_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:34:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="8B36DD90-DC2B-F920-7EA9-49F7014CB9AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="11D1F59D-D202-51F4-4536-F0A606960B86" name="Booking_Employee_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:34:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="AD48C43B-718A-5F9D-7EAC-30167F8CC10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="050AE033-86D5-3248-A1C5-69566A3E6B89" name="Booking_Treatment_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:34:14 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="3B597687-B3F6-D0CE-D21F-BA8EAEDCD845"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="15015B80-579A-9136-294C-5B7DC9C8C1ED" name="Booking_Room_FK">
+<createdBy>Alex Hughes</createdBy>
+<createdTime>2012-11-15 13:34:26 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="82DDC3DF-8026-8824-B97F-9B15D85DDF0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
