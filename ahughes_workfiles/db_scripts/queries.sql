@@ -14,10 +14,17 @@ WHERE S.ManagerID = M.EmployeeID AND S.ShopID = ;
  * Can you list all the sessions a specific member of staff had on a specific day, which
  * customers and the room numbers?
  */
- 
- 
+
+SELECT B.BookingID, B."Date", C.Name, C.Surname, R.RoomID, R.Name
+FROM NH_BOOKING B
+INNER JOIN NH_EMPLOYEE E ON E.EmployeeID = B.EmployeeID
+INNER JOIN NH_ROOM R ON R.RoomID = B.RoomID
+INNER JOIN NH_CUSTOMER C ON C.CustomerID = B.CustomerID
+WHERE E.EmployeeID = 2 AND B."Date" = '05-JUN-12';
  
 /* Question 6
  * A customer could ask "Which member of staff did my 9-10 session today 
  * and can you tell me who their manager is because I want to complain?
  */
+ 
+ 
