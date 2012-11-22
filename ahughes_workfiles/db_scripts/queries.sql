@@ -5,7 +5,7 @@
  * I'll also need to write a procedure that takes the ShopID as a parameter.
  */
   
-SELECT E.Name, E.Surname, M.Name, M.Surname
+SELECT E.Name AS Emp_Name, E.Surname AS Emp_Surname, M.Name AS Manager_Name, M.Surname AS Manager_Surname
 FROM NH_EMPLOYEE M, NH_EMPLOYEE E
 INNER JOIN NH_SHOP S ON S.ShopID = E.ShopID
 WHERE S.ManagerID = M.EmployeeID AND S.ShopID = ;

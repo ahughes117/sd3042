@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1253" />
+<script src="../dbdoc.js" type="text/javascript"></script>
+<link href="../dbdoc.css" type="text/css" rel="stylesheet">
+</head>
+<body class="object">
+<div id="header"><h2>QUERY4</h2>
+<div class="tabs clearfix">
+
+<div class="tab"><div><a href="QUERY4.html">Doc</a></div></div>
+<div class="tab"><div><a href="QUERY4_Details.html">Details</a></div></div>
+<div class="tab"><div><a href="QUERY4_Grants.html">Grants</a></div></div>
+<div class="tab"><div><a href="QUERY4_References.html">References</a></div></div>
+<div class="tab"><div><a href="QUERY4_Dependencies.html">Dependencies</a></div></div>
+<div class="tab" id="current"><div><a href="QUERY4_Code.html">Code</a></div></div>
+</div></div><br/>
+<div class="tab-panes">
+<div id="Code"> <table cellpadding="0" cellspacing="0" cellspacing="0" summary=""><tr>
+	<th>TEXT</th>
+</tr>
+	<tr><td><pre>
+PROCEDURE query4(
+	storeIDParam IN INT, 
+	queryCursor OUT SYS_REFCURSOR
+	)
+IS
+	
+BEGIN
+	
+	--Just initializing the cursor, feeding it with the query as well as the 
+	--user parameter
+	OPEN queryCursor FOR
+	SELECT E.Name, E.Surname, M.Name, M.Surname
+	FROM NH_EMPLOYEE M, NH_EMPLOYEE E
+	INNER JOIN NH_SHOP S ON S.ShopID = E.ShopID
+	WHERE S.ManagerID = M.EmployeeID AND S.ShopID = storeIDParam;
+	
+END;</pre>	</td></tr>
+</table></div></body></html>
