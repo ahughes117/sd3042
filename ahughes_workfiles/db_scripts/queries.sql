@@ -27,4 +27,52 @@ WHERE E.EmployeeID = 2 AND B."Date" = '05-JUN-12';
  * and can you tell me who their manager is because I want to complain?
  */
  
+SELECT B.BookingID, B."Date", E.EmployeeID, E.NAME, E.Surname, M.Name, M.Surname
+FROM NH_EMPLOYEE M, NH_BOOKING B
+INNER JOIN NH_CUSTOMER C ON C.CustomerID = B.CustomerID
+INNER JOIN NH_EMPLOYEE E ON E.EmployeeID = B.EmployeeID
+INNER JOIN NH_ROOM R ON R.RoomID = B.RoomID
+INNER JOIN NH_SHOP S ON S.ShopID = E.ShopID
+WHERE S.ManagerID = M.EmployeeID;
+
+/* In order to make the queries a little bit more dynamic to parameters, we will use stored
+ * procedures and cursors to present the data.
+ */
+ 
+CREATE OR REPLACE PROCEDURE query4(
+	storeIDParam IN INT, 
+	queryCursor OUT SYS_REFCURSOR
+	)
+IS
+	
+BEGIN
+	
+	--Just initializing the cursor, feeding it with the query as well as the 
+	--user parameter
+	OPEN queryCursor FOR
+	SELECT E.Name, E.Surname, M.Name, M.Surname, S.Name
+	FROM NH_EMPLOYEE M, NH_EMPLOYEE E
+	INNER JOIN NH_SHOP S ON S.ShopID = E.ShopID
+	WHERE S.ManagerID = M.EmployeeID AND S.ShopID = storeIDParam;
+	
+END;
+
+DECLARE
+	queryCursor SYS_REFCURSOR;
+	storeTable NH_SHOP%ROWTYPE;
+BEGIN
+
+	query4(2, queryCursor);
+	
+	LOOP
+			FETCH queryCursor INTO storeTable;
+		EXIT WHEN queryCursor%NOTFOUND;
+		dbms_output.put_line(storeTable.S.Name);
+	END LOOP;
+	
+	CLOSE queryCursor;
+	
+END;
+
+
  
