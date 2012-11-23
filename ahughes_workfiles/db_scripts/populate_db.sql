@@ -227,27 +227,46 @@ INSERT INTO NH_ROOM VALUES (13, 3, '1.01','Illumination');
 
 /* BookingID INT, RoomID INT, EmployeeID INT, CustomerID INT, TreatmentID INT, Date DATE, Price DECIMAL */
 INSERT INTO NH_BOOKING VALUES
-(1, 1, 1, 1, 1, to_date('04/07/2010:12:00:00AM', 'dd/mm/yyyy:hh:mi:ssam'), 50.2);
+(1, 1, 1, 1, 1, to_date('04/07/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 50.2);
 
-INSERT INTO NH_BOOKING VALUES (2, 11, 12, 14, 11, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), 45);
-INSERT INTO NH_BOOKING VALUES (3, 4, 2, 4, 6, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '05-JUN-2012', 70);
-INSERT INTO NH_BOOKING VALUES (4, 7, 4, 6, 8, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '04-SEP-2013', 85);
-INSERT INTO NH_BOOKING VALUES (5, 2, 10, 5, 9, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '13-JUL-2012', 90);
-INSERT INTO NH_BOOKING VALUES (6, 4, 9, 3, 5, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '30-AUG-2012', 54);
-INSERT INTO NH_BOOKING VALUES (7, 12, 5, 7, 3, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '11-JUL-2011', 44);
-INSERT INTO NH_BOOKING VALUES (8, 13, 3, 8, 6, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '25-SEP-2011', 40);
-INSERT INTO NH_BOOKING VALUES (9, 11, 1, 2, 12, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '19-JUL-2010', 39.99);
-INSERT INTO NH_BOOKING VALUES (10, 10, 14, 8, 6, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '20-OCT-2012', 49.99);
-INSERT INTO NH_BOOKING VALUES (11, 1, 11, 5, 8, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '17-JUL-2012', 59.99);
-INSERT INTO NH_BOOKING VALUES (12, 4, 5, 11, 13, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '11-JUL-2011', 43.3);
-INSERT INTO NH_BOOKING VALUES (13, 7, 3, 10, 12, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '11-JUL-2011', 117);
-INSERT INTO NH_BOOKING VALUES (14, 8, 7, 12, 10, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '04-JUL-2012', 65.4);
-INSERT INTO NH_BOOKING VALUES (15, 2, 8, 14, 5, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '12-DEC-2011', 23.6);
-INSERT INTO NH_BOOKING VALUES (16, 7, 2, 4, 6, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '14-SEP-2012', 32.3);
-INSERT INTO NH_BOOKING VALUES (17, 4, 4, 2, 2, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '11-SEP-2008', 56.7);
-INSERT INTO NH_BOOKING VALUES (18, 12, 11, 8, 7, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '16-JUL-2010', 55);
-INSERT INTO NH_BOOKING VALUES (19, 13, 6, 15, 1, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '18-JUL-2010', 42);
-INSERT INTO NH_BOOKING VALUES (20, 1, 3, 1, 12, to_date('2011/07/04:12:00:00AM', 'yyyy/mm/dd:hh:mi:ssam'), '20-JUL-2010', 49.99);
+INSERT INTO NH_BOOKING VALUES 
+(2, 11, 12, 14, 11, to_date('04/07/2010:01:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 45);
+INSERT INTO NH_BOOKING VALUES 
+(3, 4, 2, 4, 6, to_date('04/07/2010:02:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 70);
+INSERT INTO NH_BOOKING VALUES 
+(4, 7, 4, 6, 8, to_date('04/07/2010:03:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 85);
+INSERT INTO NH_BOOKING VALUES 
+(5, 2, 10, 5, 9, to_date('05/07/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 90);
+INSERT INTO NH_BOOKING VALUES 
+(6, 4, 9, 3, 5, to_date('06/07/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 54);
+INSERT INTO NH_BOOKING VALUES 
+(7, 12, 5, 7, 3, to_date('08/07/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 44);
+INSERT INTO NH_BOOKING VALUES 
+(8, 13, 3, 8, 6, to_date('25/09/2011:01:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 40);
+INSERT INTO NH_BOOKING VALUES 
+(9, 11, 1, 2, 12, to_date('19/07/2012:05:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'),  39.99);
+INSERT INTO NH_BOOKING VALUES 
+(10, 10, 14, 8, 6, to_date('20/10/2012:07:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 49.99);
+INSERT INTO NH_BOOKING VALUES 
+(11, 1, 11, 5, 8, to_date('17/07/2012:08:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 59.99);
+INSERT INTO NH_BOOKING VALUES 
+(12, 4, 5, 11, 13, to_date('17/07/2012:07:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 43.3);
+INSERT INTO NH_BOOKING VALUES 
+(13, 7, 3, 10, 12, to_date('17/07/2012:06:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 117);
+INSERT INTO NH_BOOKING VALUES 
+(14, 8, 7, 12, 10, to_date('18/09/2010:06:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 65.4);
+INSERT INTO NH_BOOKING VALUES 
+(15, 2, 8, 14, 5, to_date('12/12/2011:03:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 23.6);
+INSERT INTO NH_BOOKING VALUES 
+(16, 7, 2, 4, 6, to_date('14/09/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 32.3);
+INSERT INTO NH_BOOKING VALUES 
+(17, 4, 4, 2, 2, to_date('04/08/2012:02:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 56.7);
+INSERT INTO NH_BOOKING VALUES 
+(18, 12, 11, 8, 7, to_date('16/07/2010:10:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 55);
+INSERT INTO NH_BOOKING VALUES 
+(19, 13, 6, 15, 1, to_date('16/07/2010:09:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 42);
+INSERT INTO NH_BOOKING VALUES 
+(20, 1, 3, 1, 12, to_date('20/07/2010:02:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 49.99);
 
 
 /* ProductID INT, SupplierID INT */
