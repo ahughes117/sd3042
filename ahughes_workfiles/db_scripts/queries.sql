@@ -41,6 +41,7 @@ INNER JOIN NH_ROOM R ON R.RoomID = B.RoomID
 INNER JOIN NH_SHOP S ON S.ShopID = E.ShopID
 WHERE S.ManagerID = M.EmployeeID;
 
+
 /* In order to make the queries a little bit more dynamic to parameters, we will use stored
  * procedures and cursors to present the data.
  */
