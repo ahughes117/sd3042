@@ -3,6 +3,10 @@
 --   site:      Oracle Database 11g
 --   type:      Oracle Database 11g
 
+/* Includes sample data, placed in the correct position in the script.
+* ahughes, London 2012
+*/
+
 WHENEVER SQLERROR EXIT ROLLBACK;
 
 CREATE TABLE NH_BOOKING 

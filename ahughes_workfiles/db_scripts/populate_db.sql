@@ -1,13 +1,11 @@
-/* So far we have dummy data for tables:
+/* Table Sample Dummy Data
+	ahughes, London 2012
 
 ***Normal Tables***
-
-***Group1 Tables***
 PRODUCT (15)
 SUPPLIER (11)
 TREATMENT (13)
 CUSTOMER (16)
-
 STOCK (15)
 ORDER (12)
 SHOP (7)
@@ -25,12 +23,6 @@ EMPSPEC (17)
 
 *** All the tables have the prefix NH_ in order to make database server management easier. 
 
-*** GROUP 1 Tables: The tables that are totally constraint independent, meaning that they can be inserted in any order because they havent got any outgoing foreign key constraints to other tables.
-
-*** GROUP 2 Tables: The tables that contain foreign keys which depend on tables of GROUP 1 only, meaning that they can be inserted in any order after the GROUP 1 tables have been inserted.
-*/
-
-/* GROUP 1 Tables */
 
 /* ProductID INT, Desc VARCHAR, Price NUMBER (DECIMAL) */
 INSERT INTO NH_PRODUCT VALUES 

@@ -1,6 +1,9 @@
-/*  This script drops all the database tables and constraints, 		**
- ** without moving them to the recycle bin first. Use responsibly.	**
- ** "With Great Power comes Great Responsibility"						*/
+
+/*  This script drops all the database tables and constraints, 			**
+ ** without moving them to the recycle bin first. Use responsibly.		**
+ ** "With Great Power comes Great Responsibility", thx Uncle Ben. */
+ 
+ WHENEVER SQLERROR EXIT ROLLBACK;
 
 DROP TABLE NH_BOOKING CASCADE CONSTRAINTS PURGE;
 DROP TABLE NH_CUSTOMER CASCADE CONSTRAINTS PURGE;
