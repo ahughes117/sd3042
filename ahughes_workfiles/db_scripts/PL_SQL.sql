@@ -51,11 +51,23 @@ new_booking(
 	v_customerID IN INT,
 	v_treatmentID IN INT,
 	v_date IN NH_BOOKING."Date"%TYPE,
-	v_price IN,
-	v_bookingID OUT INT)
+	v_price IN NUMBER)
 AS
 v_errors INTEGER;
 BEGIN
+	
+	v_errors := isRoomAvailable(v_roomID, v_date);
+	
+	IF (v_errors =0) THEN
+		--insert statement here
+    DBMS_OUTPUT.PUT_LINE('Available!');
+	ELSE
+		DBMS_OUTPUT.PUT_LINE('This room is not available at that time. Try another one');
+	END IF;
+	
+EXCEPTION
+	WHEN OTHERS THEN
+	raise_application_error(-2001, 'Critical Error, call ahughes' || SQLERRM);
 	
 END;
 
@@ -64,7 +76,7 @@ END;
  * 0 if everything is alright (no rows fetched) and 1 if we need to check another 
   * time in the future.
  */
- CREATE OR REPLACE FUNCTION
+CREATE OR REPLACE FUNCTION
  isRoomAvailable(
 	--input arguments: we only need room number and date (contains time)
 	v_roomID IN INT,
@@ -73,18 +85,20 @@ END;
 	RETURN NUMBER
 IS
 	--output variable
-	v_result NUMBER;
+	v_output NUMBER;
 	
 	--creating the cursor, using the suitable query
+	--just selecting any integer type column, the result is not used
 	CURSOR queryCursor IS
-		SELECT RoomID, EmployeeID, CustomerID, TreatmentID, "Date"
+		SELECT RoomID
 		FROM NH_BOOKING
 		WHERE RoomID = v_roomID AND "Date" = v_date;
 		
 BEGIN
 
 	--opening and iterating through cursor
-	OPEN queryCursor
+	OPEN queryCursor;
+	
 	FETCH queryCursor INTO v_output;
 	
 	--if we have rows on resultset, means that the room is already booked.
@@ -104,18 +118,16 @@ EXCEPTION
 WHEN OTHERS THEN
 	raise_application_error(-2001, 'Critical Error, call ahughes' || SQLERRM);
 END;
-	
 
- 
 
-/* This trigger autoincrements a primary key value and makes insertions easier */
+/* This trigger autoincrements a primary key value and makes insertions easier, for table NH_BOOKING */
 CREATE OR REPLACE SEQUENCE BOOKING_SEQ;
 
 CREATE OR REPLACE TRIGGER BOOKINGID_AI
 BEFORE INSERT ON "NH_BOOKING"
 FOR EACH ROW
 BEGIN
-SELECT "BOOKING_SEQ".NEXTVAL INTO :NEW.BookingID FROM DUAL;
+	SELECT "BOOKING_SEQ".NEXTVAL INTO :NEW.BookingID FROM DUAL;
 END;
 
 

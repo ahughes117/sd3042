@@ -1,0 +1,1 @@
+/* This function calculates and applies a discount to the booking that comply with the  * conditions below: * 10% for the 3rd visit * 20% for the 6th visit * 30% for the 9th visit */CREATE OR REPLACE TRIGGER discountBEFORE INSERT ON "NH_BOOKING"FOR EACH ROWBEGIN	END;
