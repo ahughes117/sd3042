@@ -44,5 +44,5 @@ RETURN v_output;
 
 EXCEPTION
 WHEN OTHERS THEN
-	raise_application_error(-2001, 'Critical Error, call ahughes' || SQLERRM);
+	raise_application_error(-20001, 'Critical Error, call ahughes ' || SQLERRM);
 END;
