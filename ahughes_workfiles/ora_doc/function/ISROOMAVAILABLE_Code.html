@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1253" />
+<script src="../dbdoc.js" type="text/javascript"></script>
+<link href="../dbdoc.css" type="text/css" rel="stylesheet">
+</head>
+<body class="object">
+<div id="header"><h2>ISROOMAVAILABLE</h2>
+<div class="tabs clearfix">
+
+<div class="tab"><div><a href="ISROOMAVAILABLE.html">Doc</a></div></div>
+<div class="tab"><div><a href="ISROOMAVAILABLE_Details.html">Details</a></div></div>
+<div class="tab"><div><a href="ISROOMAVAILABLE_Grants.html">Grants</a></div></div>
+<div class="tab"><div><a href="ISROOMAVAILABLE_References.html">References</a></div></div>
+<div class="tab"><div><a href="ISROOMAVAILABLE_Dependencies.html">Dependencies</a></div></div>
+<div class="tab" id="current"><div><a href="ISROOMAVAILABLE_Code.html">Code</a></div></div>
+</div></div><br/>
+<div class="tab-panes">
+<div id="Code"> <table cellpadding="0" cellspacing="0" cellspacing="0" summary=""><tr>
+	<th>TEXT</th>
+</tr>
+	<tr><td><pre>
+FUNCTION
+ isRoomAvailable(
+	--input arguments: we only need room number and date (contains time)
+	v_roomID IN INT,
+	v_date IN NH_BOOKING."Date"%TYPE)
+	--we return only whether we had rows or not.
+	RETURN NUMBER
+IS
+	--output variable
+	v_output NUMBER;
+	
+	--creating the cursor, using the suitable query
+	--just selecting any integer type column, the result is not used
+	CURSOR queryCursor IS
+		SELECT RoomID
+		FROM NH_BOOKING
+		WHERE RoomID = v_roomID AND "Date" = v_date;
+		
+BEGIN
+
+	--opening and iterating through cursor
+	OPEN queryCursor;
+	
+	FETCH queryCursor INTO v_output;
+	
+	--if we have rows on resultset, means that the room is already booked.
+	IF queryCursor%FOUND THEN
+		v_output := 1;
+	ELSE
+		v_output := 0;
+	END IF;
+	
+	--closing resources is a good habit
+	CLOSE queryCursor;
+
+--returning result
+RETURN v_output;
+
+EXCEPTION
+WHEN OTHERS THEN
+	raise_application_error(-20001, 'Critical Error, call ahughes ' || SQLERRM);
+END;</pre>	</td></tr>
+</table></div></body></html>
