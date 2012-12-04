@@ -1,0 +1,1 @@
+/* A query to update some rows of stock and get the warning message */UPDATE NH_STOCKSET QUANTITY = 1WHERE StockID = 3 OR StockID = 5 OR StockID = 9;COMMIT;

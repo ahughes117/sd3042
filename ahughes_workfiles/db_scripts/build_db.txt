@@ -1,0 +1,10 @@
+/* Drops the database */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\drop_db.sql;
+
+/* Creates database structure, constraints, sample data */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\creation_insertion.sql
+
+/* Inserts database procedures, triggers and functions */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\proc\insert_procs.sql
+
+COMMIT;

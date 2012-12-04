@@ -1,11 +1,16 @@
+SET SERVEROUTPUT ON;
+
 /* executes query 4 */
 @ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\q4.sql;
 
 /* executes query 5 */
 @ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\q5.sql;
 
-/*executes query 6 */
+/* executes query 6 */
 @ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\q6.sql;
 
-/* executes a query that tries to insert a good booking */
+/* executes a series of queries that try to insert a series of bookings and also checks the discount system */
 @ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\good_booking.sql;
+
+/* executes a query that tests the low_stock_detection trigger */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\low_stock.sql;
