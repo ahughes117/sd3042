@@ -23,7 +23,7 @@ FROM NH_BOOKING B
 INNER JOIN NH_EMPLOYEE E ON E.EmployeeID = B.EmployeeID
 INNER JOIN NH_ROOM R ON R.RoomID = B.RoomID
 INNER JOIN NH_CUSTOMER C ON C.CustomerID = B.CustomerID
-WHERE E.EmployeeID = 5 AND B."Date" = '11-JUL-11';
+WHERE E.EmployeeID = 5 AND B."Date" = to_date('04/07/2010', 'dd/mm/yyyy');
 
  
 /* Question 6

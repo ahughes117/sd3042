@@ -40,7 +40,7 @@ INSERT INTO NH_BOOKING VALUES
 INSERT INTO NH_BOOKING VALUES 
 (6, 4, 9, 3, 5, to_date('06/07/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 54);
 INSERT INTO NH_BOOKING VALUES 
-(7, 12, 5, 7, 3, to_date('08/07/2010:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 44);
+(7, 12, 5, 7, 3, to_date('11/07/2011:12:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 44);
 INSERT INTO NH_BOOKING VALUES 
 (8, 13, 3, 8, 6, to_date('25/09/2011:01:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 40);
 INSERT INTO NH_BOOKING VALUES 
@@ -50,7 +50,7 @@ INSERT INTO NH_BOOKING VALUES
 INSERT INTO NH_BOOKING VALUES 
 (11, 1, 11, 5, 8, to_date('17/07/2012:08:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 59.99);
 INSERT INTO NH_BOOKING VALUES 
-(12, 4, 5, 11, 13, to_date('17/07/2012:07:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 43.3);
+(12, 4, 5, 11, 13, to_date('11/07/2011:07:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 43.3);
 INSERT INTO NH_BOOKING VALUES 
 (13, 7, 3, 10, 12, to_date('17/07/2012:06:00:00PM', 'dd/mm/yyyy:hh:mi:ssam'), 117);
 INSERT INTO NH_BOOKING VALUES 

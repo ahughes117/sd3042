@@ -1,0 +1,17 @@
+/* executes query 4 */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\q4.sql;
+
+/* executes query 5 */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\q5.sql;
+
+/*executes query 6 */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\q6.sql;
+
+/* executes query for checking bookings */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\check_bookings.sql
+
+/* executes a query that tries to insert a bad booking */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\bad_booking.sql;
+
+/* executes a query that tries to insert a good booking */
+@ d:\github\sd3042\ahughes_workfiles\db_scripts\queries\good_booking.sql;
